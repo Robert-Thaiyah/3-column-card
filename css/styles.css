@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    background-color: hsl(0, 0%, 95%);
+}
+
+.main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* card one  */
+.card-one {
+    border: 1px solid;
+    width: 400px;
+    height: 500px;
+    line-height: 1.5;
+    background-color: hsl(31, 77%, 52%);
+    padding: 2.4rem;
+    border-style: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-one h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.card-one p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.card-one .btn-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    color: hsl(31, 77%, 52%);
+    border-radius: 30px;
+    border-style: none;
+    width: 50%;
+    cursor: pointer;
+}
+
+.card-one .btn-one:hover {
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+/* card two */
+
+.card-two {
+    border: 1px solid;
+    width: 400px;
+    height: 500px;
+    line-height: 1.5;
+    background-color:  hsl(184, 100%, 22%);
+    padding: 2.4rem;
+    border-style: none;
+    border-radius: 0;
+}
+
+.card-two h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.card-two p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.card-two .btn-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    color:  hsl(184, 100%, 22%);
+    border-radius: 30px;
+    border-style: none;
+    width: 50%;
+    cursor: pointer;
+}
+
+.card-two .btn-two:hover {
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color:  hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+/* card three  */
+
+.card-three {
+    border: 1px solid;
+    width: 400px;
+    height: 500px;
+    line-height: 1.5;
+    background-color: hsl(179, 100%, 13%);
+    padding: 2.4rem;
+    border-style: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.card-three h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.card-three p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.card-three .btn-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    color: hsl(179, 100%, 13%);
+    border-radius: 30px;
+    border-style: none;
+    width: 50%;
+    cursor: pointer;
+}
+
+.card-three .btn-three:hover {
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+/* mobile state  */
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+
+    body, html {
+        height: unset;
+        margin: 10px;
+    }
+    .main-card {
+        display: flex;
+      flex-direction: column;
+      max-height: none;
+      width: 100%;
+    }
+
+    .card-one {
+        border-radius: 10px 10px 0 0px;
+    }
+
+    .card-two{
+        border-radius: 0;
+    }
+
+    .card-three {
+        border-radius: 0 0 10px 10px;
+    }
+    
+  }
