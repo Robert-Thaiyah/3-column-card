@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Git Repo](https://github.com/Robert-Thaiyah/3-column-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site URL](https://robert-thaiyah.github.io/3-column-card/)
 
 ## My process
 
@@ -47,7 +47,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
