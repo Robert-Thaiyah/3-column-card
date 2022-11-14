@@ -12,11 +12,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Lexend Deca', sans-serif;
-    /* font-family: 'Big Shoulders Display', cursive; */
     background-color: hsl(0, 0%, 95%);
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-card {
@@ -24,21 +26,23 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 /* card one  */
 .card-one {
     border: 1px solid;
     width: 400px;
-    height: 500px;
+    /* height: 500px; */
     line-height: 1.5;
     background-color: hsl(31, 77%, 52%);
     padding: 2.4rem;
     border-style: none;
-    border-radius: 10px 0 0 10px;
 }
 
-.card-one h1 {
+.card-one h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     text-transform: uppercase;
@@ -61,10 +65,10 @@ body {
     padding: 1.2rem;
     margin-top: 2rem;
     color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
     border-radius: 30px;
     border-style: none;
     width: 50%;
-    cursor: pointer;
 }
 
 .card-one .btn-one:hover {
@@ -80,15 +84,14 @@ body {
 .card-two {
     border: 1px solid;
     width: 400px;
-    height: 500px;
+    /* height: 500px; */
     line-height: 1.5;
     background-color:  hsl(184, 100%, 22%);
     padding: 2.4rem;
     border-style: none;
-    border-radius: 0;
 }
 
-.card-two h1 {
+.card-two h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     text-transform: uppercase;
@@ -111,10 +114,10 @@ body {
     padding: 1.2rem;
     margin-top: 2rem;
     color:  hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
     border-radius: 30px;
     border-style: none;
     width: 50%;
-    cursor: pointer;
 }
 
 .card-two .btn-two:hover {
@@ -129,15 +132,14 @@ body {
 .card-three {
     border: 1px solid;
     width: 400px;
-    height: 500px;
+    /* height: 500px; */
     line-height: 1.5;
     background-color: hsl(179, 100%, 13%);
     padding: 2.4rem;
     border-style: none;
-    border-radius: 0 10px 10px 0;
 }
 
-.card-three h1 {
+.card-three h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     text-transform: uppercase;
@@ -160,10 +162,10 @@ body {
     padding: 1.2rem;
     margin-top: 2rem;
     color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
     border-radius: 30px;
     border-style: none;
     width: 50%;
-    cursor: pointer;
 }
 
 .card-three .btn-three:hover {
@@ -176,7 +178,7 @@ body {
 
 /* mobile state  */
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
 
     body, html {
         height: unset;
@@ -189,16 +191,4 @@ body {
       width: 100%;
     }
 
-    .card-one {
-        border-radius: 10px 10px 0 0px;
-    }
-
-    .card-two{
-        border-radius: 0;
-    }
-
-    .card-three {
-        border-radius: 0 0 10px 10px;
-    }
-    
   }
